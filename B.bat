@@ -1,4 +1,4 @@
-@echo off
+ho off
 :: التوقف عن السيرفر الحالي في ADB إذا كان يعمل
 adb kill-server > nul 2>&1
 adb start-server > nul 2>&1
